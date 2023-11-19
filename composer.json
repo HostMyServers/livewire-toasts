@@ -1,0 +1,29 @@
+{
+    "name": "windsondias/livewire-toasts",
+    "description": "A Livewire package to create toast notifications",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "WindsonDias\\Toasts\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "role": "Developer",
+            "name": "Windson Dias",
+            "email": "windson.dsantos@outlook.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^10.32",
+        "livewire/livewire": "^3.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WindsonDias\\Toasts\\ToastServiceProvider"
+            ]
+        }
+    }
+}
