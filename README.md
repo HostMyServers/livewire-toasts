@@ -18,11 +18,14 @@ It is also necessary to add the relative path to the package folder in tailwind.
         "./vendor/windsondias/livewire-toasts/resources/**/*.blade.php",
     ],
 
-Add the component to your layout within the body tag
+Add the component to your layout
+
+    <body>
 
     @persist('toast')
-        <x-notifications::toast/>
+        <x-toasts::render/>
     @endpersist
+    </body>
 
 To use, simply call from a livewire component:
 
@@ -33,3 +36,7 @@ To use, simply call from a livewire component:
     $this->information('Message');
 
     $this->warning('Message');
+
+To change the toast layout, simply publish the package
+
+    php artisan vendor:publish --tag=livewire-toasts
