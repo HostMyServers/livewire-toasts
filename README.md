@@ -23,3 +23,13 @@ Add the component to your layout within the body tag
     @persist('toast')
         <x-notifications::toast/>
     @endpersist
+
+To use, simply call from a livewire component:
+
+    $this->success('Message');
+    
+    $this->error('Message');
+
+    $this->information('Message');
+
+    $this->warning('Message');
